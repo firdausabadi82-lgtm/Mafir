@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8faf8;
+    color: #2d3748;
+}
+
+.page-layout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color:#ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.logo span{
+    color: #4fd1c5;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover{
+    color: #4fd1c5;
+}
+
+.btn-cart{
+   background-color: #4fd1c5;
+   border: none;
+   color: white;
+   padding:8px 16px;
+   border-radius: 20px;
+   font-weight: 600;
+
+}
+
+.hero{
+    background-color: #4fd1c5;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1{
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color: #ffffff;
+    max-width:600px;
+    margin: 0 auto;
+
+}
+
+.products-section{
+    max-width:1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
+    
+}
+
+.products-section h2{
+    text-align : left;
+    padding-left: 0px;
+    margin-bottom: 30px;
+    color:#2d3748;
+}
+
+.products-grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction:column;
+}
+
+.card-header{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: #f8faf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+
+}
+
+.card-header img{
+max-width: 100%;
+ max-height: 100%;
+ width: auto;
+height: auto;
+object-fit: contain;
+border-radius: 8px;
+
+}
+
+
+
+.badge{
+    position:absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #f56565;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 0.70rem;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+    
+
+.card-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+  
+}
+
+.card-body h3{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.price{
+    color: #4fd1c5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.desc{
+    font-size: 0.9rem;
+    color:#718096;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.btn-beli{
+    width: 100%;
+    background-color: #4fd1c5;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+}
+
+.btn-beli:hover{
+    background-color: #38b2ac;
+}
+
+.footer{
+    background-color:#2d3748;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem 5%;
+        text-align: center;
+}
+
+.nav-links{
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.hero {
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 0.9rem;
+}
+
+.products-grid {
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+}
+
+.products-section h2 {
+    text-align: center;
+    padding-left: 0;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .products-section{
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+
+.product-grid {
+    gap: 25px;
+
+}
+
+.card {
+    width: calc(50%-25px);
+}
+}
+
