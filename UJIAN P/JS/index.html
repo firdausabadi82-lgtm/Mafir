@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do-List interactive</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+<body>
+        <div class="container">
+            <h1>To-Do List</h1>
+        <div class="subtitle">just do it now</div>
+
+        <form class="todo-form" id="todo-form">
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="Do your Job"
+            autocomplete="off"
+            required
+            />
+            <button type="submit">+ tambah</button>
+
+        </form>
+
+        <div class="toolbar">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="active">active</button>
+                <button class="filter-btn" data-filter="completed">completed</button>
+            </div>
+
+            <div class="stats">
+                <span id="taskCount">0</span> Job
+            </div>
+        </div>
+
+
+        <ul class="todo-list" id="todoList">
+
+        </ul>
+
+        <div class="clear-wrapper">
+            <button class="clear-btn" id="clearCompletedBtn">
+                Clear Completed
+            </button>
+        </div>
+        
+    </div>
+
+        <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
