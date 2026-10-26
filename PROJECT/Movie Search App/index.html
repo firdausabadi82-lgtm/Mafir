@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🎬Movie Search</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <h1>🎬 Movie Search</h1>
+        <p class="subtitle">find your favorite film and serial TV from <a href="https://www.tvmaze.com/api" target="_blank">TVmaze API
+        </a>
+        </p>
+
+        <form class="search-form" id="searchForm">
+            <input 
+            type="text"
+            id="searchInput"
+            placeholder="input the title of film...(example: Breaking Bad)"
+            autocomplete="off"
+            required
+            />
+            <button type="submit">🔍 Cari</button>
+        </form>
+
+        <div class="loading" hidden> laoding...</div>
+        <p id="errorMessage" hidden></p>
+        <div id="result"></div>
+            <div class="spinner"></div>
+
+        </div>
+<div class="error message" id="error message" hidden></div>
+
+<div class="result" id="result"></div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
