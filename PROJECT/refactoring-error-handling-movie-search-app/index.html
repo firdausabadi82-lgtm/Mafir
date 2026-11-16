@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Offline Notification Banner -->
+    <div id="offlineBanner" class="offline-banner" hidden>
+        ⚠️ You are currently offline. Please check your internet connection.
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Movie Search</h1>
+            <p class="subtitle">Search for your favorite movies on <a href="https://www.tvmaze.com/api" target="_blank">TVmaze API</a></p>
+        </header>
+
+        <!-- Search Form -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Input the title of film...">
+            <button id="searchBtn" type="submit">🔍 Search</button>
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading-container" hidden>
+            <div class="spinner"></div>
+            <p>Searching movies... 🎬</p>
+        </div>
+
+        <!-- Error Message Box -->
+        <div id="errorMessage" class="error-box" hidden>
+            <p id="errorText"></p>
+            <button id="retryBtn" type="button">Try Again</button>
+        </div>
+
+        <!-- Results Grid -->
+        <div id="results" class="results-grid"></div>
+        
+        <!-- Skeleton Loading (Optional placeholder while loading) -->
+        <div id="skeletonGrid" class="results-grid" hidden>
+            <!-- You can add skeleton cards here if you want, or leave it empty -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
