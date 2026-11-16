@@ -24,4 +24,4 @@ This project was a great learning experience in debugging and code refactoring. 
 ## 💻 How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username-kamu/nama-repo-kamu.git
+   git clone [https://github.com/username-kamu/nama-repo-kamu.git](https://github.com/firdausabadi82-lgtm/Mafir/tree/main/PROJECT/refactoring-error-handling-movie-search-app)
